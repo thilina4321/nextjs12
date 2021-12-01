@@ -22,5 +22,9 @@ export const getStaticProps = async () => {
     props: {
       products: [{ id: "1", name: "Product 1" }],
     },
+    revalidation:20,
+    reedirect:{
+      destination:''
+    }
   };
 };
