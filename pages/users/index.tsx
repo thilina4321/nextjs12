@@ -1,7 +1,4 @@
-import Specific from "./[id].";
 import Link from "next/link";
-import SpecificUser from "./[id].";
-import { Fragment } from "react";
 
 type User = {
   users: [];
@@ -12,8 +9,8 @@ const Users: React.FC<User> = (props) => {
   return (
     <div>
       {users.map((user) => (
-        <Link href={`/users/${user["id"]}`}>
-          <SpecificUser key={user["id"]} name={user["name"]} />
+        <Link key={user["id"]} href={`/users/${user["id"]}`}>
+            <div> {user["name"]} </div>
         </Link>
       ))}
     </div>

@@ -4,10 +4,10 @@ const SpecificUser = (props) => {
 
 export default SpecificUser;
 
-export const getServerSideProps = (context) => {
-  console.log(context, "context");
+// export const getServerSideProps = (context) => {
+//   console.log(context, "context");
 
-  return {
-    props: {},
-  };
-};
+//   return {
+//     props: {},
+//   };
+// };
